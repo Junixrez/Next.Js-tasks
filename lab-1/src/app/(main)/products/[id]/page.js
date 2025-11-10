@@ -20,6 +20,15 @@ export async function generateStaticParams() {
   return ids;
 }
 
+export async function generateMetadata({ params }) {
+  const { id } = await params;
+  const product = await getSingleProduct(id);
+  return {
+    title: product.title,
+    description: product.description,
+  };
+}
+
 export default async function ProductDetails({ params }) {
   const { id } = await params;
   const product = await getSingleProduct(id);
