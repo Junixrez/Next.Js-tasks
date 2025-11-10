@@ -9,6 +9,10 @@ export default function navbar() {
     { href: "/contact", title: "Contact" },
     { href: "/login", title: "Login" },
     { href: "/products", title: "Products" },
+    { href: "/csr", title: "csr" },
+    { href: "/ssr", title: "ssr" },
+    { href: "/ssg", title: "ssg" },
+    { href: "/isr", title: "isr" },
   ];
 
   const pathname = usePathname();
